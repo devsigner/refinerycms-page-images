@@ -54,7 +54,7 @@ reset_functionality = function() {
     , stop: reindex_images
   });
 
-  $('#content #page_images li:not(.empty)').live('hover', function(e) {
+  $('#content #page_images li:not(.empty)').hover(function(e) {
     if (e.type == 'mouseenter' || e.type == 'mouseover') {
       if ((image_actions = $(this).find('.image_actions')).length == 0) {
         image_actions = $("<div class='image_actions'></div>");
